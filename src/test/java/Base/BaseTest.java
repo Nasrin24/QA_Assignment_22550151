@@ -58,15 +58,7 @@ public class BaseTest {
     @BeforeClass
     public void setUpBrowser() {
 
-        // Configure Chrome to run in headless mode
-        //ChromeOptions options = new ChromeOptions();
-        // options.addArguments("--headless");
-        // options.addArguments("--disable-gpu");
-        // options.addArguments("--window-size=1920,1080");
-
-        // Initialize WebDriver with options
-        //WebDriver driver = new ChromeDriver(options);
-
+    
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.daraz.lk/");
