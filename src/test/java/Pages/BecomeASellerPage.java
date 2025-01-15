@@ -28,9 +28,9 @@ public class BecomeASellerPage {
     // Method to searchFor
     public String SellerInfo() {
         sellButton.click();
-        // Scroll to the bottom of the page
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+//        // Scroll to the bottom of the page
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
         sellerLogin.click();
         String info = infoText.getText();
         return info;

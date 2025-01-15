@@ -22,7 +22,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void setUp() {
-        // Create a unique file name for the Extent Report
+        // Create a  file name for the Extent Report
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         reportFileName = "ExtentReport_" + timestamp + ".html"; // Default report name
 
@@ -58,7 +58,7 @@ public class BaseTest {
     @BeforeClass
     public void setUpBrowser() {
 
-    
+
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.daraz.lk/");
